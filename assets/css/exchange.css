@@ -27,6 +27,201 @@ html {
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
+/* 🌿 Green Dictionary & Action Styles */
+
+#green-section {
+  padding: 60px 20px;
+  background: #f9fff9;
+  border-top: 3px solid #a4d07a;
+}
+
+#green-section h2 {
+  text-align: center;
+  color: #2e7d32;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Thanh tìm kiếm */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 10px 15px;
+  border: 2px solid #a5d6a7;
+  border-radius: 20px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+/* Danh sách cây và thuật ngữ */
+#list-tree {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 0 30px;
+}
+
+.tree-card {
+  background: #ffffff;
+  border: 2px solid #e0f2f1;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.tree-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tree-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #c8e6c9;
+}
+
+.tree-card-content {
+  padding: 15px 20px;
+}
+
+.tree-card-content h3 {
+  font-size: 1.2rem;
+  color: #2e7d32;
+  margin-bottom: 8px;
+}
+
+.tree-card-content p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Nút hành động */
+.btn-green {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #81c784;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-green:hover {
+  background-color: #4caf50;
+}
+
+/* 🌱 Hành động xanh */
+#green-action {
+  margin-top: 80px;
+  background: #e8f5e9;
+  padding: 50px 20px;
+  border-radius: 25px;
+}
+
+#green-action h2 {
+  text-align: center;
+  color: #2e7d32;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.action-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.action-form textarea {
+  width: 80%;
+  min-height: 100px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 2px solid #a5d6a7;
+  resize: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.action-form textarea:focus {
+  border-color: #4caf50;
+}
+
+.action-form button {
+  padding: 10px 20px;
+  background-color: #66bb6a;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.action-form button:hover {
+  background-color: #388e3c;
+}
+
+/* Danh sách hành động */
+.action-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.action-item {
+  background: white;
+  border: 1px solid #c8e6c9;
+  padding: 15px 20px;
+  border-radius: 15px;
+  width: 75%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.action-item strong {
+  color: #2e7d32;
+}
+
+.action-item span {
+  display: block;
+  color: #666;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-bar input {
+    width: 90%;
+  }
+
+  .action-form textarea {
+    width: 95%;
+  }
+
+  .action-item {
+    width: 90%;
+  }
+}
+
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(320deg, #3bae8b, #229245);
