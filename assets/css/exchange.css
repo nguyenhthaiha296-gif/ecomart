@@ -1691,3 +1691,99 @@ html {
 .top-button:hover i {
   transform: translateY(-2px);
 }
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6fdf9;
+  margin: 0;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #c8f0cd;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header img {
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: #1b4332;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+h1, h2 {
+  color: #2d6a4f;
+  text-align: center;
+}
+
+section {
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 900px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* cây */
+.tree-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.tree-item {
+  background-color: #e9f5ec;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* từ điển */
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* hành động xanh */
+#actionForm input,
+#actionForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#actionForm button {
+  background-color: #52b788;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#actionsList {
+  margin-top: 20px;
+}
+
+.action-card {
+  background-color: #e9f5ec;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
